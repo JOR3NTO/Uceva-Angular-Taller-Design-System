@@ -30,7 +30,11 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -71,6 +75,26 @@
         },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"
+        }
+      }
+    },
+    "design-system-bootstrap": {
+      "projectType": "library",
+      "root": "projects/design-system-bootstrap",
+      "sourceRoot": "projects/design-system-bootstrap/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/design-system-bootstrap/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/design-system-bootstrap/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
