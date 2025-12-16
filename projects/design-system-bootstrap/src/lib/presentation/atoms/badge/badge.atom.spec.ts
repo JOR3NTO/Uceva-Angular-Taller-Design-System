@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DesignSystemBootstrap } from './design-system-bootstrap';
+import { BadgeAtom } from './badge.atom';
 
-describe('DesignSystemBootstrap', () => {
-  let component: DesignSystemBootstrap;
-  let fixture: ComponentFixture<DesignSystemBootstrap>;
+describe('BadgeAtom', () => {
+  let component: BadgeAtom;
+  let fixture: ComponentFixture<BadgeAtom>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DesignSystemBootstrap]
+      imports: [BadgeAtom]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DesignSystemBootstrap);
+    fixture = TestBed.createComponent(BadgeAtom);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
