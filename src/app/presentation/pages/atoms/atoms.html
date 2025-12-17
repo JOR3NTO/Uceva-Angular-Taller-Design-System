@@ -1,15 +1,20 @@
 <app-container title="Badge" >
-    <h3 class="mt-5">Badges con Text-White</h3>
     <section class="d-flex gap-2" >
         @for(badge of badges; track badge){
-            <dsb-badge-atom [text]="badge.type | titlecase" [type]="badge.type" typeText="text-white" ></dsb-badge-atom>
+            <dsb-badge-atom [text]="badge.type | titlecase" [type]="badge.type" [typeText]="badge.typeText" ></dsb-badge-atom>
         }
     </section>
+</app-container>
 
-    <h3 class="mt-5">Badges con Text-Dark</h3>
+<app-container title="Button" >
     <section class="d-flex gap-2" >
-        @for(badge of badges; track badge){
-            <dsb-badge-atom [text]="badge.type | titlecase" [type]="badge.type" typeText="text-dark" ></dsb-badge-atom>
+        @for(button of buttons; track button){
+            <dsb-button-atom 
+                [idButton]="button.idButton" 
+                [text]="button.type | titlecase" 
+                [type]="button.type" 
+                (clicker)="onClick($event)" >
+            </dsb-button-atom>
         }
     </section>
 </app-container>

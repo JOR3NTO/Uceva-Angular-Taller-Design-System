@@ -1,12 +1,13 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
 import { ButtonType } from '../../../core/interfaces/core.interface';
 
 @Component({
   selector: 'dsb-button-atom',
   template: `
     <button 
+      [id]="idButton"
       type="button" 
-      class="btn" 
+      class="btn"
       [class]="getClass()"
       (click)="onEmit()">
       {{ text }}
@@ -19,7 +20,7 @@ export class ButtonAtom {
   @Output() clicker: EventEmitter<string> = new EventEmitter<string>();
 
   getClass(){
-    return `bg-${this.type}`;
+    return `btn-${this.type}`;
   }
 
   onEmit() {

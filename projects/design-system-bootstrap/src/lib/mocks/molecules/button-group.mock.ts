@@ -1,16 +1,6 @@
-import { Component } from '@angular/core';
-import { ButtonGroupData, ButtonGroupMolecule } from 'design-system-bootstrap';
-import { ContainerComponent } from '../../components/container/container.component';
+import { ButtonGroupData } from './../../core/interfaces/core.interface';
 
-@Component({
-  templateUrl: './molecules.html',
-  imports: [
-    ContainerComponent,
-    ButtonGroupMolecule,
-  ],
-})
-export class Molecules {
-  buttonsGroupData: ButtonGroupData[] = [
+export const MOCK_BUTTONS_GROUP_DATA: ButtonGroupData[] = [
     { idButton: 'idButtonPrimary', type: 'primary', text: 'Text Primary' },
     { idButton: 'idButtonSecondary', type: 'secondary', text: 'Text Secondary' },
     { idButton: 'idButtonSuccess', type: 'success', text: 'Text Success' },
@@ -19,9 +9,4 @@ export class Molecules {
     { idButton: 'idButtonInfo', type: 'info', text: 'Text Info' },
     { idButton: 'idButtonLight', type: 'light', text: 'Text Light' },
     { idButton: 'idButtonDark', type: 'dark', text: 'Text Dark' },
-  ];
-
-  onClick(idButton: string){
-    alert(`Click en el Boton de Grupo ${idButton}`);
-  }
-}
+];

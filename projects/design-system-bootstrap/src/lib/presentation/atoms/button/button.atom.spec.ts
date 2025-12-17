@@ -35,7 +35,7 @@ describe('ButtonAtom', () => {
       component.type = type;
       fixture.detectChanges();
       const button = fixture.debugElement.query(By.css('button'));
-      expect(button.nativeElement.className).toContain(`bg-${type}`);
+      expect(button.nativeElement.className).toContain(`btn-${type}`);
     });
   });
 
@@ -43,7 +43,7 @@ describe('ButtonAtom', () => {
     MOCK_BUTTON_TYPES.forEach(type => {
       component.type = type;
       fixture.detectChanges();
-      expect(component.getClass()).toContain(`bg-${type}`);
+      expect(component.getClass()).toContain(`btn-${type}`);
     });
   });
 
