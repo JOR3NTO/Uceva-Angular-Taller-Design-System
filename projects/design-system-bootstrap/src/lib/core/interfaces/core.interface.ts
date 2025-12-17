@@ -10,3 +10,5 @@ export type Themes =
 
 export type BadgeType = Themes;
 export type BadgeTypeText = 'text-white' | 'text-dark';
+
+export type ButtonType = Themes;

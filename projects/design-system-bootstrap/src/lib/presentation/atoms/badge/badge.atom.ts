@@ -11,6 +11,6 @@ export class BadgeAtom {
   @Input() typeText: BadgeTypeText = 'text-white';
 
   getClass(){
-    return `bg-${this.type} ${this.typeText}`
+    return `bg-${this.type} ${this.typeText}`;
   }
 }
