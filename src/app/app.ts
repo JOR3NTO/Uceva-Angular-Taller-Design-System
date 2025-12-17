@@ -1,10 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DesignSystemBootstrap } from 'design-system-bootstrap';
+import { NavbarComponent } from './presentation/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DesignSystemBootstrap],
+  imports: [
+    RouterOutlet, 
+    NavbarComponent,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
