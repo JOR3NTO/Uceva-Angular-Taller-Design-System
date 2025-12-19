@@ -1,7 +1,7 @@
 <app-container title="Badge" >
     <section class="d-flex gap-2" >
         @for(badge of badges; track badge){
-            <dsb-badge-atom [text]="badge.type | titlecase" [type]="badge.type" [typeText]="badge.typeText" ></dsb-badge-atom>
+            <badge-atom [text]="badge.type | titlecase" [type]="badge.type" [typeText]="badge.typeText" ></badge-atom>
         }
     </section>
 </app-container>

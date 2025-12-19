@@ -2,7 +2,6 @@ module.exports = {
   preset: 'jest-preset-angular',
   setupFilesAfterEnv: ['<rootDir>/setup-jest.ts'],
   coverageReporters: ["html", "json", "lcov", "text", "clover"],
-  
   modulePathIgnorePatterns: ["<rootDir>/dist/"],
   testPathIgnorePatterns: [
     "<rootDir>/node_modules/",
