@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { MOCK_NAV_LINKS } from '../../../mocks/molecules/nav-link.mocks';
+import { provideRouter } from '@angular/router';
+import { MOCK_NAV_LINKS } from '../../../mocks/nav-link.mocks';
 import { NavLinkMolecule } from './nav-link.molecule';
-import { ActivatedRoute, provideRouter } from '@angular/router';
 
 describe('NavLinkMolecule', () => {
   let component: NavLinkMolecule;

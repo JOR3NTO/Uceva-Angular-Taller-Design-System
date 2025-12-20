@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { MOCK_BADGE_TEXT, MOCK_BADGE_TYPE, MOCK_BADGE_TYPE_DEFAULT, MOCK_BADGE_TYPE_TEXT, MOCK_BADGE_TYPE_TEXT_DEFAULT, MOCK_BADGE_TYPES, MOCK_BADGE_TYPES_TEXT } from '../../../mocks/atoms/badge.mocks';
+import { MOCK_BADGE_TEXT, MOCK_BADGE_TYPE, MOCK_BADGE_TYPE_DEFAULT, MOCK_BADGE_TYPE_TEXT, MOCK_BADGE_TYPE_TEXT_DEFAULT, MOCK_BADGE_TYPES, MOCK_BADGE_TYPES_TEXT } from '../../../mocks/badge.mocks';
 import { BadgeAtom } from './badge.atom';
 
 describe('BadgeAtom', () => {

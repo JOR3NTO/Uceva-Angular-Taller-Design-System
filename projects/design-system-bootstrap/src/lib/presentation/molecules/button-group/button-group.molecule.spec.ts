@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ButtonGroupMolecule } from './button-group.molecule';
-import { MOCK_BUTTONS_GROUP_DATA } from '../../../mocks/molecules/button-group.mock';
 import { By } from '@angular/platform-browser';
+import { MOCK_BUTTONS_GROUP_DATA } from '../../../mocks/button-group.mock';
+import { ButtonGroupMolecule } from './button-group.molecule';
 
 describe('ButtonGroupMolecule', () => {
   let component: ButtonGroupMolecule;

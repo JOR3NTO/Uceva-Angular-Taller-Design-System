@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ButtonAtom } from './button.atom';
-import { MOCK_BUTTON_TEXT, MOCK_BUTTON_TYPES, MOCK_BUTTON_ID } from '../../../mocks/atoms/button.mocks';
 import { By } from '@angular/platform-browser';
+import { MOCK_BUTTON_ID, MOCK_BUTTON_TEXT, MOCK_BUTTON_TYPES } from '../../../mocks/button.mocks';
+import { ButtonAtom } from './button.atom';
 
 describe('ButtonAtom', () => {
   let component: ButtonAtom;

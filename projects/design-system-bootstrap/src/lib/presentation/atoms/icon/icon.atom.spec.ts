@@ -1,8 +1,7 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { IconAtom } from './icon.atom';
-import { By } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
+import { IconAtom } from './icon.atom';
 
 describe('IconAtom', () => {
   let component: IconAtom;

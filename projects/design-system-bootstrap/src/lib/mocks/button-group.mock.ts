@@ -1,4 +1,4 @@
-import { ButtonGroupData } from './../../core/interfaces/core.interface';
+import { ButtonGroupData } from '../core/interfaces/core.interface';
 
 export const MOCK_BUTTONS_GROUP_DATA: ButtonGroupData[] = [
     { idButton: 'idButtonPrimary', type: 'primary', text: 'Text Primary' },
