@@ -1,4 +1,11 @@
 {
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/test.ts", "src/**/*.spec.ts", "src/app/file-to-exclude.ts"]
+  "include": [
+    "projects/design-system-bootstrap/src/lib/core/**/*.ts",
+    "projects/design-system-bootstrap/src/lib/presentation/**/*.ts",
+  ],
+  "exclude": [
+    "src/**/*.ts", 
+    "src/**/*.spec.ts", 
+    "projects/**/*.spec.ts", 
+  ]
 }

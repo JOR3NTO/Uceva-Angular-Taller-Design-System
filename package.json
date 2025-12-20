@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve",
-    "start:dev": "ng build design-system-bootstrap --watch",
+    "build:dev": "ng build design-system-bootstrap --watch",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",

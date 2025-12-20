@@ -18,3 +18,13 @@ export interface ButtonGroupData {
     type: ButtonType;
     text: string;
 }
+
+/**
+ * Representa un enlace de navegación.
+ */
+export interface NavLink {
+    /** Texto visible del enlace */
+    text: string;
+    /** Url asociada al enlace */
+    url: string;
+}

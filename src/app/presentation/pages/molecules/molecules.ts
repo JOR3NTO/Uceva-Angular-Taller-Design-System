@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { ButtonGroupData, ButtonGroupMolecule } from 'design-system-bootstrap';
+import { 
+  ButtonGroupData, 
+  ButtonGroupMolecule, 
+  NavLink, 
+  NavLinkMolecule 
+} from 'design-system-bootstrap';
 import { ContainerComponent } from '../../components/container/container.component';
 
 @Component({
@@ -7,6 +12,7 @@ import { ContainerComponent } from '../../components/container/container.compone
   imports: [
     ContainerComponent,
     ButtonGroupMolecule,
+    NavLinkMolecule,
   ],
 })
 export class Molecules {
@@ -19,6 +25,12 @@ export class Molecules {
     { idButton: 'idButtonInfo', type: 'info', text: 'Text Info' },
     { idButton: 'idButtonLight', type: 'light', text: 'Text Light' },
     { idButton: 'idButtonDark', type: 'dark', text: 'Text Dark' },
+  ];
+
+  navLinks: NavLink[] = [
+    { text: 'Átomos', url: '/atoms' },
+    { text: 'Moléculas', url: '/molecules' },
+    { text: 'Organismos', url: '/organisms' },
   ];
 
   onClick(idButton: string){

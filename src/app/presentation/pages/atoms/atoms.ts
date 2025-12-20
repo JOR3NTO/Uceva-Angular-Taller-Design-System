@@ -1,6 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { BadgeAtom, BadgeType, BadgeTypeText, ButtonAtom, ButtonType } from 'design-system-bootstrap';
+import { 
+  BadgeAtom, 
+  BadgeType, 
+  BadgeTypeText, 
+  ButtonAtom, 
+  ButtonType,
+  IconAtom,
+ } from 'design-system-bootstrap';
 import { ContainerComponent } from '../../components/container/container.component';
 
 @Component({
@@ -8,6 +15,7 @@ import { ContainerComponent } from '../../components/container/container.compone
   imports: [
     BadgeAtom,
     ButtonAtom,
+    IconAtom,
     ContainerComponent,
     CommonModule,
   ],
@@ -34,6 +42,14 @@ export class Atoms {
     { type: 'light', idButton: 'idButttonLight' },
     { type: 'dark', idButton: 'idButttonDark' },
   ];
+
+  icons: { name: string, size: number }[] = [
+    { name: 'bootstrap', size: 1 },
+    { name: 'apple', size: 2 },
+    { name: 'bell', size: 3 },
+    { name: 'android', size: 4 },
+    { name: 'ban', size: 5 },
+  ]
 
   onClick(idButton: string){
     alert(`Click en el Boton ${idButton}`);
