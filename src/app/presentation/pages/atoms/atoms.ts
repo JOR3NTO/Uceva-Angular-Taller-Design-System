@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { 
-  BadgeAtom, 
-  BadgeType, 
-  BadgeTypeText, 
-  ButtonAtom, 
+import {
+  BadgeAtom,
+  BadgeType,
+  BadgeTypeText,
+  ButtonAtom,
   ButtonType,
+  ContainerAtom,
   IconAtom,
- } from 'design-system-bootstrap';
-import { ContainerComponent } from '../../components/container/container.component';
+} from 'design-system-bootstrap';
 
 @Component({
   templateUrl: './atoms.html',
@@ -16,7 +16,7 @@ import { ContainerComponent } from '../../components/container/container.compone
     BadgeAtom,
     ButtonAtom,
     IconAtom,
-    ContainerComponent,
+    ContainerAtom,
     CommonModule,
   ],
 })

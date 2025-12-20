@@ -1,16 +1,27 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './presentation/components/navbar/navbar.component';
+import { NavbarConfig, NavbarOrganism } from 'design-system-bootstrap';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet, 
-    NavbarComponent,
+    NavbarOrganism,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('Angular-Standalone-Template');
+  navbarConfig: NavbarConfig = {
+    title: 'Taller Sistema de Diseño',
+    iconConfig: {
+      icon: 'bootstrap',
+      size: 2
+    },
+    navLinks: [
+      { text: 'Átomos', url: '/atoms' },
+      { text: 'Moléculas', url: '/molecules' },
+      { text: 'Organismos', url: '/organisms' },
+    ]
+  }
 }
