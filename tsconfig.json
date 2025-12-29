@@ -4,7 +4,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "design-system-bootstrap": [
+      "@brejcha13320/design-system-bootstrap": [
         "./dist/design-system-bootstrap"
       ]
     },

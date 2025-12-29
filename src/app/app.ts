@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarConfig, NavbarOrganism } from 'design-system-bootstrap';
+import { NavbarConfig, NavbarOrganism } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
   selector: 'app-root',

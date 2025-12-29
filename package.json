@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "ng serve",
+    "build": "ng build design-system-bootstrap",
     "build:dev": "ng build design-system-bootstrap --watch",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -21,7 +22,6 @@
       }
     ]
   },
-  "private": true,
   "dependencies": {
     "@angular/common": "20.3.14",
     "@angular/compiler": "20.3.14",

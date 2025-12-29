@@ -5,7 +5,7 @@ import {
   ContainerAtom, 
   NavLink, 
   NavLinkMolecule 
-} from 'design-system-bootstrap';
+} from '@brejcha13320/design-system-bootstrap';
 
 @Component({
   templateUrl: './molecules.html',

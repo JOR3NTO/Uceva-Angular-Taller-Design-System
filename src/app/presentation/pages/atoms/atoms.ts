@@ -8,7 +8,7 @@ import {
   ButtonType,
   ContainerAtom,
   IconAtom,
-} from 'design-system-bootstrap';
+} from '@brejcha13320/design-system-bootstrap';
 
 @Component({
   templateUrl: './atoms.html',

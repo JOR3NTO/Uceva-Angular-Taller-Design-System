@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { ContainerAtom, NavbarConfig, NavbarOrganism } from 'design-system-bootstrap';
+import { ContainerAtom, NavbarConfig, NavbarOrganism } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
   selector: 'app-organisms',
-  imports: [NavbarOrganism, ContainerAtom],
   templateUrl: './organisms.html',
-  styleUrl: './organisms.scss',
+  imports: [NavbarOrganism, ContainerAtom],
 })
 export class Organisms {
   navbarConfig: NavbarConfig = {
