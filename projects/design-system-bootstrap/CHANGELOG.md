@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.2] 2025-12-29
+
+**_Fix:__**
+
+    - Se ajusta el selector del badge
+
 ## [1.0.1] 2025-12-29
 
 **_Fix:__**

@@ -22,7 +22,7 @@ import { BadgeType, BadgeTypeText } from '../../../core/interfaces/core.interfac
  * ```
  */
 @Component({
-  selector: 'badge-atom',
+  selector: 'dsb-badge-atom',
   template: `<span class="badge" [class]="getClass()" >{{ text }}</span>`,
 })
 export class BadgeAtom {

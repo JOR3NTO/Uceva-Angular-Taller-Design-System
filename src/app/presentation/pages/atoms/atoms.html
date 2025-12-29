@@ -9,7 +9,7 @@
 <dsb-container-atom title="Badge" >
     <section class="d-flex gap-2" >
         @for(badge of badges; track badge){
-            <badge-atom [text]="badge.type | titlecase" [type]="badge.type" [typeText]="badge.typeText" ></badge-atom>
+            <dsb-badge-atom [text]="badge.type | titlecase" [type]="badge.type" [typeText]="badge.typeText" ></dsb-badge-atom>
         }
     </section>
 </dsb-container-atom>
