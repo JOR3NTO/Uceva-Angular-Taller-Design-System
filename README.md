@@ -30,6 +30,9 @@ Ubícate en la raíz del proyecto (donde se encuentra el archivo package.json).
 
 ### 3️⃣ Ejecutar el proyecto
 
+Para ejecutar el proyecto debemos generar un compilado del projects para consumirlo desde el app
+y ejecutar un proyecto de prueba consumiendo la libreria ubicada en projects
+
 ```npm run build:dev``` y ```npm run start``` o ```ng serve```
 
 ### 4️⃣ Abrir en el navegador
