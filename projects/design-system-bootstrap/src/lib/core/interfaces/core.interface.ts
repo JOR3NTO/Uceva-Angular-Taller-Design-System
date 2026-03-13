@@ -20,9 +20,6 @@ export type BadgeTypeText = 'text-white' | 'text-dark';
 /** Tipo de tema para botones */
 export type ButtonType = Themes;
 
-export type AlertType = Themes;
-export type AlertTypeText = 'text-white' | 'text-dark';
-
 /**
  * Configuración de un botón dentro de un grupo de botones.
  */
