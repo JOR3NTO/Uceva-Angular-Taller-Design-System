@@ -17,12 +17,25 @@
 <dsb-container-atom title="Button" >
     <section class="d-flex gap-2" >
         @for(button of buttons; track button){
-            <dsb-button-atom 
-                [idButton]="button.idButton" 
-                [text]="button.type | titlecase" 
-                [type]="button.type" 
+            <dsb-button-atom
+                [idButton]="button.idButton"
+                [text]="button.type | titlecase"
+                [type]="button.type"
                 (clicker)="onClick($event)" >
             </dsb-button-atom>
         }
+    </section>
+</dsb-container-atom>
+
+<dsb-container-atom title="Alert" >
+    <section class="d-flex gap-2" >
+      @for(alert of alerts; track alert){
+      <dsb-alert-atom
+        [text]="alert.type | titlecase"
+        [type]="alert.type"
+        [typeText]="alert.typeText">
+      </dsb-alert-atom>
+      }
+
     </section>
 </dsb-container-atom>
