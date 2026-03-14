@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
+  AlertAtom,
   BadgeAtom,
   BadgeType,
   BadgeTypeText,
@@ -17,6 +18,7 @@ import {
     ButtonAtom,
     IconAtom,
     ContainerAtom,
+    AlertAtom,
     CommonModule,
   ],
 })
@@ -50,6 +52,17 @@ export class Atoms {
     { name: 'android', size: 4 },
     { name: 'ban', size: 5 },
   ]
+
+  alerts: { type: ButtonType; typeText: BadgeTypeText }[] = [
+    { type: 'primary', typeText: 'text-white' },
+    { type: 'secondary', typeText: 'text-white' },
+    { type: 'success', typeText: 'text-white' },
+    { type: 'danger', typeText: 'text-white' },
+    { type: 'warning', typeText: 'text-dark' },
+    { type: 'info', typeText: 'text-dark' },
+    { type: 'light', typeText: 'text-dark' },
+    { type: 'dark', typeText: 'text-white' },
+  ];
 
   onClick(idButton: string){
     alert(`Click en el Boton ${idButton}`);
