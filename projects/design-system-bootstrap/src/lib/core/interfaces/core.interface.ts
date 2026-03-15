@@ -68,3 +68,10 @@ export interface NavbarIconConfig {
     /** Tamaño del icono en unidades `rem` */
     size: number;
 }
+
+
+export interface AlertGroupData {
+  text: string;
+  type: ButtonType;
+  typeText: BadgeTypeText;
+}

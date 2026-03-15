@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { 
-  ButtonGroupData, 
-  ButtonGroupMolecule, 
-  ContainerAtom, 
-  NavLink, 
-  NavLinkMolecule 
+import {
+  ButtonGroupData,
+  ButtonGroupMolecule,
+  ContainerAtom,
+  NavLink,
+  NavLinkMolecule,
+  AlertGroup,
+  AlertGroupData,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -13,6 +15,7 @@ import {
     ContainerAtom,
     ButtonGroupMolecule,
     NavLinkMolecule,
+    AlertGroup,
   ],
 })
 export class Molecules {
@@ -31,6 +34,15 @@ export class Molecules {
     { text: 'Link 1', url: '/atoms' },
     { text: 'Link 2', url: '/molecules' },
     { text: 'Link 3', url: '/organisms' },
+  ];
+
+  alertsGroupData: AlertGroupData[] = [
+    { text: 'Alerta primaria', type: 'primary', typeText: 'text-white' },
+    { text: 'Alerta de éxito', type: 'success', typeText: 'text-white' },
+    { text: 'Alerta de advertencia', type: 'warning', typeText: 'text-dark' },
+    { text: 'Alerta de información', type: 'info', typeText: 'text-dark' },
+    { text: 'Alerta de luz', type: 'light', typeText: 'text-dark' },
+    { text: 'Alerta de oscuridad', type: 'dark', typeText: 'text-white' },
   ];
 
   onClick(idButton: string){
