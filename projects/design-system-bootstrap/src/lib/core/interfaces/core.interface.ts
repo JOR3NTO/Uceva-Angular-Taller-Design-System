@@ -35,6 +35,23 @@ export interface ButtonGroupData {
 }
 
 /**
+ * Configuración de un dropdown dentro de un grupo de dropdowns.
+ */
+export interface DropdownGroupData {
+  /** Identificador único del dropdown */
+  idDropdown: string;
+
+  /** Etiqueta visible del dropdown */
+  label: string;
+
+  /** Tipo visual del botón del dropdown */
+  type: ButtonType;
+
+  /** Opciones que se mostrarán en el menú desplegable */
+  items: string[];
+}
+
+/**
  * Representa un enlace de navegación.
  */
 export interface NavLink {
