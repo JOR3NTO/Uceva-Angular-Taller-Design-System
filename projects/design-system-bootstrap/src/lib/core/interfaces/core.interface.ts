@@ -92,3 +92,11 @@ export interface AlertGroupData {
   type: ButtonType;
   typeText: BadgeTypeText;
 }
+
+
+export interface AlertDropdownConfig {
+  alertsGroupData: AlertGroupData[];
+
+  dropdownGroupData: DropdownGroupData[];
+}
+

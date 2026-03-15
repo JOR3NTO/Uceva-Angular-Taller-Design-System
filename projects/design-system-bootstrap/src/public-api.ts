@@ -24,3 +24,4 @@ export { DropdownGroupMolecule } from './lib/presentation/molecules/dropdown-gro
 
 //Organisms
 export { NavbarOrganism } from './lib/presentation/organisms/navbar/navbar.organism';
+export { AlertDropdownOrganism } from './lib/presentation/organisms/alert-dropdown/alert-dropdown.organism';
