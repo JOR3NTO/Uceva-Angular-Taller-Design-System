@@ -8,7 +8,7 @@ import {
   MOCK_ALERT_TYPE_TEXT_DEFAULT,
   MOCK_ALERT_TYPES,
   MOCK_ALERT_TYPES_TEXT
-} from '../../../../mocks/alert.mocks';
+} from '../../../mocks/alert.mocks';
 import { AlertAtom } from './alert.atom';
 
 describe('AlertAtom', () => {
