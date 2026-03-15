@@ -10,7 +10,7 @@ export { IconAtom } from './lib/presentation/atoms/icon/icon.atom';
 export { BadgeAtom } from './lib/presentation/atoms/badge/badge.atom';
 export { ButtonAtom } from './lib/presentation/atoms/button/button.atom';
 export { ContainerAtom } from './lib/presentation/atoms/container/container-atom';
-export { AlertAtom } from './lib/presentation/atoms/alert/alert.atom/alert.atom';
+export { AlertAtom } from './lib/presentation/atoms/alert/alert.atom';
 export { DropdownAtom } from './lib/presentation/atoms/dropdown/dropdown.atom';
 
 
@@ -19,6 +19,7 @@ export { DropdownAtom } from './lib/presentation/atoms/dropdown/dropdown.atom';
 //Molecules
 export { NavLinkMolecule } from './lib/presentation/molecules/nav-link/nav-link.molecule';
 export { ButtonGroupMolecule } from './lib/presentation/molecules/button-group/button-group.molecule';
+export { AlertGroup } from './lib/presentation/molecules/alert-group/alert-group';
 
 //Organisms
 export { NavbarOrganism } from './lib/presentation/organisms/navbar/navbar.organism';
