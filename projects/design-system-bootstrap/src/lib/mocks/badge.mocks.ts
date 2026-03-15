@@ -1,4 +1,4 @@
-import { BadgeType, BadgeTypeText } from '../../core/interfaces/core.interface';
+import { BadgeType, BadgeTypeText } from '../core/interfaces/core.interface';
 
 export const MOCK_BADGE_TYPE: BadgeType = 'success';
 export const MOCK_BADGE_TYPE_DEFAULT: BadgeType = 'primary';

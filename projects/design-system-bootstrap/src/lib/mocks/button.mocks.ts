@@ -1,6 +1,6 @@
-import { ButtonType } from '../../core/interfaces/core.interface';
+import { ButtonType } from '../core/interfaces/core.interface';
 
-export const MOCK_BUTTON_TYPES: ButtonType[] = [ 
+export const MOCK_BUTTON_TYPES: ButtonType[] = [
     'primary',
     'secondary',
     'success',

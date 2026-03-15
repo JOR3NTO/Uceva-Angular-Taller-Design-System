@@ -11,6 +11,7 @@ export { BadgeAtom } from './lib/presentation/atoms/badge/badge.atom';
 export { ButtonAtom } from './lib/presentation/atoms/button/button.atom';
 export { ContainerAtom } from './lib/presentation/atoms/container/container-atom';
 export { AlertAtom } from './lib/presentation/atoms/alert/alert.atom/alert.atom';
+export { DropdownAtom } from './lib/presentation/atoms/dropdown/dropdown.atom';
 
 
 

@@ -9,6 +9,7 @@ import {
   ButtonType,
   ContainerAtom,
   IconAtom,
+  DropdownAtom,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -19,6 +20,7 @@ import {
     IconAtom,
     ContainerAtom,
     AlertAtom,
+    DropdownAtom,
     CommonModule,
   ],
 })
@@ -64,8 +66,34 @@ export class Atoms {
     { type: 'dark', typeText: 'text-white' },
   ];
 
+dropdowns: { idDropdown: string; label: string; type: ButtonType; items: string[] }[] = [
+  {
+    idDropdown: 'dropdown-primary',
+    label: 'Primary',
+    type: 'primary',
+    items: ['Primera opción', 'Segunda opción', 'Tercera opción'],
+  },
+  {
+    idDropdown: 'dropdown-secondary',
+    label: 'Secondary',
+    type: 'secondary',
+    items: ['Primera opción', 'Segunda opción', 'Tercera opción'],
+  },
+  {
+    idDropdown: 'dropdown-success',
+    label: 'Success',
+    type: 'success',
+    items: ['Primera opción', 'Segunda opción', 'Tercera opción'],
+  },
+  // agrega más tipos si quieres...
+];
+
   onClick(idButton: string){
     alert(`Click en el Boton ${idButton}`);
+  }
+
+  onSelect(item: string) {
+    alert(`Seleccionaste: ${item}`);
   }
 
 }
