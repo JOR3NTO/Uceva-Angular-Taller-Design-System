@@ -20,6 +20,7 @@ export { DropdownAtom } from './lib/presentation/atoms/dropdown/dropdown.atom';
 export { NavLinkMolecule } from './lib/presentation/molecules/nav-link/nav-link.molecule';
 export { ButtonGroupMolecule } from './lib/presentation/molecules/button-group/button-group.molecule';
 export { AlertGroup } from './lib/presentation/molecules/alert-group/alert-group';
+export { DropdownGroupMolecule } from './lib/presentation/molecules/dropdown-group/dropdown-group.molecule';
 
 //Organisms
 export { NavbarOrganism } from './lib/presentation/organisms/navbar/navbar.organism';

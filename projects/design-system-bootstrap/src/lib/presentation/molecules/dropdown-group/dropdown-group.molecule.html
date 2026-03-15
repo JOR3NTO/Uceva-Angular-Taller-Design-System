@@ -1,0 +1,11 @@
+<div class="d-flex gap-1" role="group" aria-label="Dropdown group">
+  @for (dropdown of dropdownGroupData; track dropdown) {
+    <dsb-dropdown-atom
+      [idDropdown]="dropdown.idDropdown"
+      [label]="dropdown.label"
+      [type]="dropdown.type"
+      [items]="dropdown.items"
+      (select)="onSelect(dropdown.idDropdown, $event)">
+    </dsb-dropdown-atom>
+  }
+</div>
