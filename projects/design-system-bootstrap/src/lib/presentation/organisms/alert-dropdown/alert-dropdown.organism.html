@@ -1,0 +1,19 @@
+@if (alertsGroupData || dropdownGroupData) {
+  <section class="p-3 border rounded-3 bg-light">
+    <div class="row g-3 align-items-start">
+      @if (alertsGroupData?.length) {
+        <div class="col-12 col-lg-6">
+          <dsb-alert-group [alertsGroupData]="alertsGroupData"></dsb-alert-group>
+        </div>
+      }
+
+      @if (dropdownGroupData?.length) {
+        <div class="col-12 col-lg-6 d-flex justify-content-lg-end">
+          <dsb-dropdown-group-molecule
+            [dropdownGroupData]="dropdownGroupData">
+          </dsb-dropdown-group-molecule>
+        </div>
+      }
+    </div>
+  </section>
+}

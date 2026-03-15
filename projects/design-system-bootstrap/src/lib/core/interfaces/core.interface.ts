@@ -92,3 +92,17 @@ export interface AlertGroupData {
   type: ButtonType;
   typeText: BadgeTypeText;
 }
+
+
+/**
+ * Configuración para el organismo AlertDropdownOrganism, que combina un grupo de alertas y un grupo de dropdowns.
+ * Define las propiedades necesarias para configurar ambos grupos dentro del organismo, permitiendo una integración coherente de mensajes de estado y acciones agrupadas en menús desplegables.
+ *
+ */
+export interface AlertDropdownConfig {
+  // Colección de alertas que se mostrarán en la zona de mensajes.
+  alertsGroupData: AlertGroupData[];
+// Colección de configuraciones para cada dropdown del organismo.
+  dropdownGroupData: DropdownGroupData[];
+}
+
