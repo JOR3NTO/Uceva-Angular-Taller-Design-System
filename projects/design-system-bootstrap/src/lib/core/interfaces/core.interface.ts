@@ -69,9 +69,16 @@ export interface NavbarIconConfig {
     size: number;
 }
 
-
+/**
+ * Estructura de datos para configurar una alerta dentro del AlertGroup.
+ * Incluye el texto de la alerta, su tipo visual (color) y el tipo de texto (clase CSS para el color del texto).
+ *
+ */
 export interface AlertGroupData {
+  /** Texto que se muestra en la alerta */
   text: string;
+  /** Tipo visual de la alerta (color) */
   type: ButtonType;
+  /** Tipo de texto para la alerta (clase CSS para el color del texto) */
   typeText: BadgeTypeText;
 }
